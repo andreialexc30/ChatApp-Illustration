@@ -1,0 +1,41 @@
+@import 'globals', 'pillshape', 'flexbox', 'phone';
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: $white;
+    overflow: hidden;
+}
+
+h1 {
+    color: $main-heading;
+    font-weight: $font-bold;
+}
+
+.app-description {
+    width: 35%;
+    position: absolute;
+    z-index: 1;
+    left: 44em;
+    top: 15em;
+    font-size: 20px;
+    line-height: 1.5em;
+    letter-spacing: .25px;
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.paragraph {
+    color: $paragraphs;
+}

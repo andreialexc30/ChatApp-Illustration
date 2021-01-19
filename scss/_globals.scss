@@ -1,0 +1,48 @@
+*, *::before, *::after { box-sizing: inherit }
+
+// <!!!--- Primary ---!!!>
+// < -- Text -- >
+$sub-heading-UI: hsl(276, 100%, 81%);
+$left-chat-bubble: hsl(276, 55%, 52%);
+$right-chat-bubble: hsl(271, 15%, 43%);
+$placeholder-text: hsl(206, 6%, 79%);
+$main-heading: hsl(271, 36%, 24%);
+$paragraphs: hsl(270, 7%, 64%);
+
+// < -- Gradients -- >
+$light-magenta: hsl(293, 100%, 63%);
+$light-violet: hsl(264, 100%, 61%);
+
+// <!!!--- Secondary ---!!!>
+$white: hsl(0, 0%, 100%);
+$app-bg: hsl(270, 20%, 96%);
+$submit-btn-bg: hsl(271, 36%, 24%);
+$radio-btn-outline: hsl(289, 100%, 72%);
+$pillshape: #f9f4fa;
+$left-bubble-bg: #ede5f1;
+
+
+// Weights
+$font-normal: 400;
+$font-light: 500;
+$font-bold: 700;
+
+// Mixins
+@mixin flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin flexbox-bubbles-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@mixin flexbox-bubbles-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

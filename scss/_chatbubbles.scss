@@ -1,0 +1,31 @@
+@import 'globals';
+
+.bubble {
+    font-size: 12px;
+    flex-wrap: wrap;
+    display: flex;
+    width: 60%;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: $left-bubble-bg;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.mobile-shape-layout__body__bubbles-left {
+    color: $left-chat-bubble;
+
+    h3, .window-payment {
+        color: $white;
+    }
+}
+
+.mobile-shape-layout__body__bubbles-right {
+    color: $right-chat-bubble;
+
+    h3 {
+        color: white;
+    }
+}

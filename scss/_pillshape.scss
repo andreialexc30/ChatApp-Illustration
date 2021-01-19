@@ -1,0 +1,21 @@
+@import 'globals';
+
+.pillshape {
+    position: absolute;
+    width: 600px;
+    height: 999px;
+    z-index: -200;
+    border-radius: 1000px;
+}
+
+.one {
+    top: -17.5em;
+    left: -5em;
+    background: linear-gradient($light-magenta, $light-violet);
+}
+
+.two {
+    bottom: -20em;
+    right: -18em;
+    background: $pillshape;
+}

@@ -1,0 +1,178 @@
+@import 'globals', 'chatbubbles';
+
+.mobile {
+    width: 50%;
+    margin: 0 auto;
+    
+    &-shape-layout {
+        border: 15px solid white;
+        box-shadow: .1px 1px 25px #807b7b;
+        width: 340px;
+        height: 605px;
+        position: absolute;
+        z-index: 2;
+        top: 5em;
+        left: 27em;
+        border-radius: 30px;
+        background: $app-bg;
+
+        p {
+            margin: 5px;
+        }
+
+        &__pill {
+            width: 60%;
+            z-index: 2;
+            position: absolute;
+            border: 2px solid white;
+            height: 35px;
+            left: 4em;
+            border-radius: 500px;
+            background: white;
+            top: -14px;
+        }
+        
+        &__heading {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background: linear-gradient(to right, $light-violet, $light-magenta);
+            font-size: 10px;
+            height: 80px;
+            padding-top: 20px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            color: $white;
+
+            .fa-angle-left {
+                font-size: 20px;
+            }
+
+            &-header {
+                display: flex;
+                align-items: center;
+                margin-right: 10em;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                    margin-top: 2px;
+                    border: 2px solid white;
+                }
+
+                .header-casing {
+                    h3 {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 13px;
+                    }
+
+                    span {
+                        font-weight: $font-normal;
+                        margin-top: 2px;
+                        font-size: 10px;
+                        color: $sub-heading-UI;
+                    }
+                }
+            }
+        }
+
+        &__body {
+            &__bubbles-right {
+                @include flexbox-bubbles-right;
+                margin-top: 20px;
+                margin-right: 5px;
+
+
+                .dog-pictures {
+                    display: flex;
+                    width: 100%;
+                    justify-content: flex-end;
+                }
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    margin-right: 8px;
+                    border-radius: 15px;
+                }
+
+                .window-three, .window-four {
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 0px;
+                    box-shadow: 1px 4px 5px gray;
+                    background: $white;
+                }
+            }
+
+            &__bubbles-left {
+                margin-top: 10px;
+                margin-left: 5px;
+
+                .checkbox {
+                    width: 15px;
+                    height: 15px;
+                    border: 1px solid;
+                    border-radius: 50%;
+                    color: $radio-btn-outline;
+                }
+
+                .window-payment {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 75%;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    background: linear-gradient(to left, $light-violet, $light-magenta);
+
+                    .left-content {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    h3 {
+                        font-weight: $font-bold;
+                    }
+
+                    span {
+                        font-weight: $font-light;
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .message-bar {
+                border-radius: 200px;
+                display: flex;
+                justify-content: space-between;
+                height: 45px;
+                align-items: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-top: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+                background: $white;
+
+                .send-circle-btn {
+                    width: 25px;
+                    width: 25px;
+                    height: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background: $submit-btn-bg;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
