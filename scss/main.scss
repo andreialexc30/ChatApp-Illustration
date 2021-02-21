@@ -31,9 +31,13 @@ h1 {
 }
 
 .attribution {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+    position: absolute;
+    z-index: 2;
+    top: 8em;
+    left: 1em;
+    background: white;
+    border-radius: 2em;
+    padding: 5px;
 }
 
 .paragraph {
