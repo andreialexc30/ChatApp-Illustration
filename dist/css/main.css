@@ -9,7 +9,7 @@
 }
 
 .pillshape {
-  position: absolute;
+  position: relative;
   width: 600px;
   height: 999px;
   z-index: -200;
@@ -107,7 +107,7 @@
     font-size: 8px;
     width: 250px;
     height: 470px;
-    top: 5em;
+    top: 18em;
     left: 7em;
     z-index: 2;
   }
@@ -147,7 +147,7 @@
     width: 85% !important;
     font-size: 16px !important;
     left: 0 !important;
-    top: 32em !important;
+    top: 40em !important;
     text-align: center;
     margin: 10px;
   }
@@ -176,7 +176,7 @@
   height: 605px;
   position: absolute;
   z-index: 2;
-  top: 5em;
+  top: 8.5em;
   left: 27em;
   border-radius: 30px;
   background: #f5f3f7;
@@ -413,7 +413,7 @@
     font-size: 8px;
     width: 250px;
     height: 470px;
-    top: 5em;
+    top: 18em;
     left: 7em;
     z-index: 2;
   }
@@ -453,7 +453,7 @@
     width: 85% !important;
     font-size: 16px !important;
     left: 0 !important;
-    top: 32em !important;
+    top: 40em !important;
     text-align: center;
     margin: 10px;
   }
