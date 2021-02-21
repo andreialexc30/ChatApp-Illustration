@@ -22,7 +22,7 @@ h1 {
 .app-description {
     width: 35%;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     left: 44em;
     top: 15em;
     font-size: 20px;
@@ -33,7 +33,7 @@ h1 {
 .attribution {
     position: absolute;
     z-index: 2;
-    top: 8em;
+    top: 5em;
     left: 1em;
     background: white;
     border-radius: 2em;
