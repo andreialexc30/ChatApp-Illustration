@@ -97,3 +97,19 @@
         text-align: unset;
     }
 }
+
+// Attribution
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+    .attribution {
+        position: absolute;
+        z-index: 2;
+        top: 30em !important;
+        left: 0 !important;
+        background: white !important;
+        border-radius: 2em !important;
+        padding: 5px !important;
+        transform: rotate(90deg);
+        right: -20em !important;
+    }
+} 
